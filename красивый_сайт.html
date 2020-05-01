@@ -1,0 +1,474 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+    <title>Learn to code</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+.header-row {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   box-shadow: 10px 10px grey;
+}
+
+.header-row div:hover{
+   background-color: blue;
+   border: 3px solid white;
+   color: white;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 3px solid blue;
+  color: blue;
+  background-color: white;
+  text-align: center;
+  height: 100px;
+  line-height: 65px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+#sign-up {
+   background-color: blueviolet;
+   color: white;
+   border: 3px solid white;
+}
+
+#sign-up:hover {
+   background-color: white;
+   color: blueviolet;
+   border: 3px solid blueviolet;
+}
+
+.main-top [class*="col-"]{
+   height: 800px;
+   text-align: center;
+}
+
+.main-top [class*='col-'] label {
+   font-size: 1.2em;
+}
+
+.main-top [class*='col-'] button {
+   background-color: blueviolet;
+   color: white;
+   font-size: 1.5em;
+   width: 50%;
+}
+.main-top [class*='col-'] button:hover {
+   box-shadow: 0px 0px 10px grey;
+}
+
+.main-top-right {
+   color: black;
+   font-size: 1.2em;
+}
+
+.main-top [class*='col-'] i {
+   display: inline-block;
+   padding: 5px;
+   margin: 5px;
+   border: 2px solid blueviolet;
+   border-radius: 2px;
+}
+
+.main-top [class*='col-'] i:hover {
+   box-shadow: 0px 0px 10px grey;
+
+}
+
+.quiz [class*="col-"]{ 
+   height: 800px;
+   text-align: center;
+}
+.quiz [class*='col-1'] {
+   font-size: 2em;
+   word-spacing: 8.33%;
+}
+
+.quiz [class*='col-1']:hover {
+   background-color: blue;
+   color: white;
+   border:3px solid white;
+} 
+
+#word-animation-1 {
+   background-color: white;
+   font-weight: bold;
+   position: relative;
+   animation: mymove-1 30s infinite;
+}
+
+.quiz [class*='col-1']:hover [id *= 'word-animation'] {
+   color:blue;
+   border: 3px solid blueviolet;
+}
+
+
+#word-animation-2 {
+   background-color: white;
+   font-weight: bold;
+   position: relative;
+   animation: mymove-2 30s infinite;
+}
+
+@keyframes mymove-1 {
+  from {top: 0px; }
+  to {top: 500px; }
+}
+ 
+@keyframes mymove-2 {
+  from {top: 500px;}
+  to {top: 0px;}
+}
+
+
+.motto [class *= 'col-'] {
+   height: 400px;
+   text-align: center;
+   font-size: 2.5em;
+   font-weight: bold;
+   vertical-align: middle;
+}
+
+.motto [class *= 'col-8']:hover {
+   background-color: blue;
+   color: white;
+   border: 3px solid white;
+
+}
+
+.motto [class *= 'col-'] div {
+   position: relative;
+   top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.learning-process [class *= 'col-'] {
+   height: 800px;
+   text-align: center;
+}
+
+.learning-process .col-2 div {
+   margin: 20px;
+   height: 15%;
+   border: 3px solid blue;
+   border-radius: 50%;
+   text-align: center;
+   font-size: 1.5em;
+}
+
+.learning-process .col-2:hover {
+   background-color: blue;
+   border: 3px solid white;
+}
+
+.learning-process .col-2:hover div {
+   background-color: blue;
+   border: 3px solid white;
+   color: white;
+}
+
+
+.learning-process .col-4 div {
+   margin: 20px;
+   height: 15%;
+   border: 3px solid blue;
+   text-align: center;
+   font-size: 1em;
+   border-radius: 5px;
+}
+
+.learning-process .col-6 div {
+   margin: 20px;
+   height: 15%;
+   border: 3px solid blue;
+   text-align: center;
+   font-size: 1.5em;
+   line-height: 25px;
+   padding: 5px;
+   color: black;
+   border-radius: 5px;
+   font-family: Arial, Helvetica, sans-serif
+}
+
+.learning-process .col-6 div span {
+   font-weight: bold;
+}
+
+.learning-choice [class *= 'col-'] {
+   height: 400px;
+   text-align: center;
+   font-size: 5em;
+}
+
+.learning-choice [class *= 'col-'] div{
+   top: 50%;
+   transform: translateY(-50%);
+   position: relative;
+   -webkit-transform: translateY(-50%);
+
+}
+
+.learning-choice [class *= 'col-']:hover {
+   background-color: blue;
+   color: white;
+   border: 3px solid white;
+}
+
+.learning-options [class *= 'col-'] {
+   height: 600px;
+   text-align: center;
+   font-size: 1.5em;
+}
+
+.learning-options [class *= 'col-'] p{
+   font-size: 2em;
+   font-weight: bold;
+   text-decoration: underline;
+   height: 150px;
+}
+
+
+.start-time [class *= 'col-']{
+   height: 600px;
+   text-align: center;
+   font-size: 4em;
+   border-right: none;
+   border-left: none;
+   background-image: url('back-2.jpg')
+
+}
+
+.typewriter h1 {
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end) infinite,
+    blink-caret .75s step-end infinite;
+   font-size: 1.2em;
+   height: 100%;
+   color: white;
+   line-height: 100px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+    </style>
+ </head>
+ <div> 
+    
+    <div class="header-row">
+    
+    <div class="col-3">Codecademy</div>
+    <div class="col-1">Catalog</div>
+    <div class="col-2">Learn from home</div>
+    <div class="col-1">Pricing</div>
+    <div class="col-1">Business</div>
+    <div class="col-1"></div>
+    <div class="col-1">Log in</div>
+    <div class="col-2" id = 'sign-up'>Sign up</div>
+
+    </div>
+
+    <div class="main-top">
+    
+      <div class="col-6">
+         <img src = 'woman.jpg' style = 'object-fit: cover; height: 100%; width: 100%;'>
+      </div>
+      <div class="col-6 main-top-right">
+         <p style = 'font-size: 1.5em; color: black;'><b>Get started for free</b></p>
+         <form>
+            <label>Email</label></br>
+            <textarea cols = '50' rows = '2'> </textarea><br>
+            <label>Password</label></br>
+            <textarea cols = '50' rows = '2'> </textarea><br>
+            <button type="submit">Start coding now</button>
+         </form>
+         <div class = 'col-1'></div>
+         <div class = 'col-4'>
+            <p>By signing up for Codecademy, you agree to Codecademy's <a href = ''>Terms of Service</a> & <a href = ''>Privacy Policy</a>.</p>
+            <p><b>Or, use another account:</b></p>
+            <i class="fa fa-instagram" style="font-size:48px;color: violet"></i>
+            <i class="fa fa-twitter" style="font-size:48px;color: lightskyblue"></i>
+            <i class="fa fa-facebook" style="font-size:48px;color: blue"></i>
+         </div>
+         <div class = 'col-1'></div>
+      </div>
+   </div>
+
+   <div class="quiz">
+    
+      <div class="col-1">
+         <p id = 'word-animation-1'>Take the quiz</p>
+      </div>
+
+      <div class="col-10">
+         <img src = 'quiz-2.jpg' style = 'object-fit: cover; height: 100%; width: 100%;'>
+      </div>
+
+      <div class="col-1" id = 'word-animation'>
+         <p id = 'word-animation-2'>Take the quiz</p>
+      </div>
+   </div>
+
+   <div class="motto">
+    
+      <div class="col-2">
+         
+      </div>
+
+      <div class="col-8">
+         <div>First, we invented the best system for learning to code.
+         Seven years and 45 million learners later, we've perfected it.</div>
+      </div>
+
+      <div class="col-2">
+         
+      </div>
+
+   </div>
+
+   <div class="learning-process">
+    
+      <div class="col-2">
+         <div><p>1</p></div>
+         <div><p>2</p></div>
+         <div><p>3</p></div>
+         <div><p>4</p></div>
+         <div><p>5</p></div>
+      </div>
+      <div class="col-4">
+         <div>
+            <img src = 'macbook.jpg' style = 'object-fit: cover; height: 100%; width: 100%;'>
+         </div>
+         <div>
+            <img src = 'macbook.jpg' style = 'object-fit: cover; height: 100%; width: 100%;'>
+         </div>
+         <div>
+            <img src = 'macbook.jpg' style = 'object-fit: cover; height: 100%; width: 100%;'>
+         </div>
+         <div>
+            <img src = 'macbook.jpg' style = 'object-fit: cover; height: 100%; width: 100%;'>
+         </div>
+         <div>
+            <img src = 'macbook.jpg' style = 'object-fit: cover; height: 100%; width: 100%;'>
+         </div>
+      </div>
+      <div class="col-6">
+         <div>
+            <span>Choose what to learn</span><br>
+            From building websites to analyzing data, the choice is yours. Not sure where to start? We'll point you in the right direction.
+         </div>
+         <div>
+            <span>Learn by doing</span><br>
+            No matter your experience level, you'll be writing real, working code in minutes.
+         </div>
+         <div>
+            <span>Get instant feedback</span><br>
+            Your code is tested as soon as you submit it, so you always know if you're on the right track.
+         </div>
+         <div>
+            <span>Put your learning into practice</span><br>
+            Apply your learning with real-world projects and test your knowledge with tailor-made quizzes.
+         </div>
+         <div>
+            <span>Land your dream job</span><br>
+            Coding skills have never been more in-demand. Learn everything you need to take your career to the next level.
+         </div>
+      </div>
+   </div>
+
+
+   <div class="learning-choice">
+    
+      <div class="col-12">
+         <div>
+         Tell us why you want to learn to code.
+         We’ll show you what to learn.
+         </div>
+      </div>
+   </div>
+
+   
+   <div class="learning-options">
+    
+      <div class="col-4">
+         <div>
+            <p>Web Development</p>
+            <ul style = 'overflow: auto; list-style-type: circle;border: 3px solid blue; '>
+               <li style = 'float: left; margin: 0px 20px;'>HTML/CSS</li>
+               <li style = 'float: right; margin: 0px 20px;'>JAVASCRIPT</li>
+            </ul>
+            <p style = 'font-size: 1em; text-decoration: none; font-weight: normal;'>Master the languages of the web: HTML, CSS, and JavaScript. This path will prepare you to build basic websites and then build interactive web apps.</p>
+         </div>
+      </div>
+      <div class="col-4">
+         <div>
+            <p>Programming and Computer Science</p>
+            <ul style = 'overflow: auto; list-style-type: circle; border: 3px solid blue;'>
+               <li style = 'float: left; margin: 0px 20px;'>PYTHON</li>
+               <li style = 'float: right; margin: 0px 20px;'>CMD LINE</li>
+            </ul>
+            Learn Python fundamentals, one of the hottest and fastest growing programming languages. This is a great introduction to the world of code.
+         </div>
+      </div>
+      <div class="col-4">
+         <div>
+            <p>Data Science</p>
+            <ul style = 'overflow: auto; list-style-type: circle;border: 3px solid blue; '>
+               <li style = 'float: left; margin: 0px 20px;'>PYTHON</li>
+               <li style = 'float: right; margin: 0px 20px;'>SQL</li>
+            </ul>
+            Learn SQL and Python and build the skills you need to analyze data. Great for anyone trying to use code to be more data-driven.
+         </div>
+      </div>
+   </div>
+
+
+   <div class="start-time">
+    
+      <div class="col-12 typewriter">
+         <div style = 'top: 50%;transform: translateY(-50%);position: relative;-webkit-transform: translateY(-50%);'>
+         <h1>
+            Invest in yourself.
+         </h1>
+         </div>
+         <button type = 'submit' style = 'width: 15%; text-align: center; height: 10%; border-radius: 5px; color: blueviolet;'>Get started with us</button>
+      </div>
+   </div>
+
+ </body>
+</html>
